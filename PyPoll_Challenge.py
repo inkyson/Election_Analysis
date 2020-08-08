@@ -21,7 +21,6 @@ candidate_votes = {}
 county_options = []
 county_votes = {}
 
-
 # Track the winning candidate, vote count and percentage
 winning_candidate = ""
 winning_count = 0
@@ -75,7 +74,6 @@ with open(file_to_load) as election_data:
 
         # 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1
-
 
 # Save the results to our text file.
 with open(file_to_save, "w") as txt_file:
