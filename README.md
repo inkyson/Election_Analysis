@@ -14,9 +14,9 @@ We will be working with the following **resources** to generate the results:
   - **Details:**
     - We first wrote a script to initialize an accumulator to count up all the votes: total_votes = 0
     - We opened up the Data Source using the with open() statement and looped through all the rows to count up the total votes. 
-      ![total_votes_loop.png](total_votes_loop.png)
+      ![total_votes_loop.png](Images/total_votes_loop.png)
     - Utilized the print statement to show the final vote count.
-      ![total_votes_results.png](total_votes_results.png)
+      ![total_votes_results.png](Images/total_votes_results.png)
       
 - Breakdown of the number of votes and the percentage of total votes for each county in the precinct:
   - **Results:** 
