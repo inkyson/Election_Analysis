@@ -14,8 +14,10 @@ We worked with the following **resources** to generate the results:
   - **Process**:
     - We first wrote a script to initialize an accumulator to count up all the votes: total_votes = 0
     - We opened up our data source using the with open() statement and looped through all the rows to count up the total votes. 
+      
       ![total_votes_loop.png](Images/total_votes_loop.png)
     - We utilized the *print* statement to show the final vote count.
+      
       ![total_votes_results.png](Images/total_votes_results.png)
       
 - Breakdown of the number of votes and the percentage of total votes for each county in the precinct:
@@ -25,20 +27,26 @@ We worked with the following **resources** to generate the results:
     - Arapahoe: 24,801 total number of votes, 6.7% of the total votes
   - **Process**:
     - In order to link the number of votes to each county, we first declared an empty list and dictionary.
+      
       ![declare_county_list_dict.png](Images/declare_county_list_dict.png)
     - Inside the *for* loop, we added a decision statement to extract the county names and track the votes for that specific county.  We set each of the county's vote count to 0, then wrote the script: *county_votes[county_name] += 1* outside the *if* statement in order for the vote to be counted incrementally.
+      
       ![county_if_statement.png](Images/county_if_statement.png) 
     - We created a *for* loop to calculate the final results including a formula to show the percentage of the total votes that each county received.
+      
       ![county_votes_results.png](Images/county_votes_results.png)
   
 - County with the largest number of votes:
   - **Results**: Denver
   - **Process**:
     - We first initialized an empty string and variable to hold the name and total number of votes for the county with the largest number of votes.
+      
       ![Initialize_winning_county_var.png](Images/Initialize_winning_county_var.png)
     - We then created a decision statement to determine the result.  This script was added within the repetition statement that determined the number of votes for each county.
+      
       ![winning_county_if.png](Images/winning_county_if.png)
     - We created a *print* statement to show the end result.
+      
       ![winning_county_results.png](Images/winning_county_results.png)
   
 - Breakdown of the number of votes and the percentage of the total votes each candidate received:
@@ -48,12 +56,14 @@ We worked with the following **resources** to generate the results:
     - Raymon Anthony Doane: 11,606 number of votes, 3.1% of the total votes
   - **Process**: 
     - Here, we used the same logic as we did for determining the per county totals.  Instead of county, we broke this down by candidates.
+      
       ![candidate_results.png](Images/candidate_results.png)
   
 - Winning candidate, their vote count, and their percentage of the total votes:
   - **Results**: Diana DeGette won with a total of 272,892 votes winning 73.8% of the total votes.
   - **Process**: 
     - Again, we used the same process as we did for determining the winning county but added the percentage of the total votes to the result.
+      
       ![winning_candidate.png](Images/winning_candidate.png)
 
 ## **3. Election Audit Summary**
@@ -100,4 +110,5 @@ Once we found a successful solution, the eventual goal of this project was to im
 - Essentially, the script can be used in any other elections by simply modifying the list and dictionaries.  For example, if we receive data source information tabulating voting results by congressional districts instead of by county, we can simply update the script with *districts* in place of *county*.  
 
 - Finally, for use of this script in any elections we need to simply update the load and save file path with the relevant .csv and .txt files.
+  
   ![load_save_path.png](Images/load_save_path.png)
